@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite parallel="false" name="NopCommmerce">
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="NopCommmerce">
   <test name="Run on Chrome">
     <classes>
-      <class name="com.nopcommerce.user.User_01_Register_Login"/>
+      <class name="com.nopcommerce.user.Level_03_Page_Object_Model"/>
     </classes>
   </test> 
 </suite> 
