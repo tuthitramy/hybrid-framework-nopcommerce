@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.nopcommerce.user.Level_03_Page_Object_Login"/>
+      <class name="javaBasic.Topic_03_Data_Type_Exercises"/>
+      <class name="javaBasic.Topic_07_Condition_Switch_Case"/>
+      <class name="javaBasic.Topic_11_Array"/>
+      <class name="javaBasic.Topic_08_Loop_For"/>
+      <class name="com.nopcommerce.user.Level_03_Page_Object_Register"/>
+      <class name="com.nopcommerce.user.User_02_MyAccount"/>
+      <class name="javaBasic.Topic_06_Condition_If_Else"/>
+      <class name="com.nopcommerce.user.Level_01_Register_DRY"/>
+      <class name="javaBasic.Topic_04_Operator"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -3,7 +3,6 @@ package com.nopcommerce.user;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
@@ -13,9 +12,8 @@ import org.testng.annotations.Test;
 
 import pageObjects.HomePageObject;
 import pageObjects.RegisterPageObject;
-import pageUIs.RegisterPageUI;
 
-public class Level_03_Page_Object_Model {
+public class Level_03_Page_Object_Register {
 	WebDriver driver;
 	String projectPath = System.getProperty("user.dir");
 	private HomePageObject homePage;
@@ -40,7 +38,7 @@ public class Level_03_Page_Object_Model {
 	}
 
 	@Test
-	public void TC_01_Register_Empty_Data() {
+	public void Register_01_Empty_Data() {
 		homePage.clickToRegisterLink();
 		registerPage.clickToButtonRegister();
 		Assert.assertEquals(registerPage.getErrorMessageAtFirstNameTextbox(), "First name is required.");
@@ -51,7 +49,7 @@ public class Level_03_Page_Object_Model {
 	}
 
 	@Test
-	public void TC_02_Register_Invalid_Data() {
+	public void Register_02_Invalid_Data() {
 		homePage.clickToRegisterLink();
 		registerPage.inputToFirstNameTextbox(firstName);
 		registerPage.inputToLastNameTextbox(lastName);
@@ -65,7 +63,7 @@ public class Level_03_Page_Object_Model {
 	}
 
 	@Test
-	public void TC_03_Register_Success() {
+	public void Register_03_Success() {
 		homePage.clickToRegisterLink();
 		registerPage.inputToFirstNameTextbox(firstName);
 		registerPage.inputToLastNameTextbox(lastName);
@@ -79,7 +77,7 @@ public class Level_03_Page_Object_Model {
 	}
 
 	@Test
-	public void TC_04_Register_Existing_Email() {
+	public void Register_04_Existing_Email() {
 		homePage.clickToRegisterLink();
 		registerPage.inputToFirstNameTextbox(firstName);
 		registerPage.inputToLastNameTextbox(lastName);
@@ -93,7 +91,7 @@ public class Level_03_Page_Object_Model {
 	}
 
 	@Test
-	public void TC_05_Register_Password_Less_Than_6_Chars() {
+	public void Register_05_Password_Less_Than_6_Chars() {
 		homePage.clickToRegisterLink();
 		registerPage.inputToFirstNameTextbox(firstName);
 		registerPage.inputToLastNameTextbox(lastName);
@@ -108,7 +106,7 @@ public class Level_03_Page_Object_Model {
 	}
 
 	@Test
-	public void TC_06_Register_Confirm_Password_Not_Match() {
+	public void Register_06_Confirm_Password_Not_Match() {
 		homePage.clickToRegisterLink();
 		registerPage.inputToFirstNameTextbox(firstName);
 		registerPage.inputToLastNameTextbox(lastName);

@@ -17,6 +17,7 @@ public class RegisterPageObject extends BasePage {
 		waitForElementVisible(driver, RegisterPageUI.REGISTER_BUTTON);
 		clickToElement(driver, RegisterPageUI.REGISTER_BUTTON);
 
+
 	}
 
 	public String getErrorMessageAtFirstNameTextbox() {
@@ -55,35 +56,35 @@ public class RegisterPageObject extends BasePage {
 		// TODO Auto-generated method stub
 		waitForElementVisible(driver,RegisterPageUI.FIRST_NAME_TEXTBOX);
 		senkeysToElement(driver, RegisterPageUI.FIRST_NAME_TEXTBOX,firstName);
-		
+
 	}
 
 	public void inputToLastNameTextbox(String lastName) {
 		// TODO Auto-generated method stub
 		waitForElementVisible(driver,RegisterPageUI.LAST_NAME_TEXTBOX);
 		senkeysToElement(driver, RegisterPageUI.LAST_NAME_TEXTBOX,lastName);
-		
+
 	}
 
 	public void inputToEmailTextbox(String string) {
 		// TODO Auto-generated method stub
 		waitForElementVisible(driver,RegisterPageUI.EMAIL_TEXTBOX);
 		senkeysToElement(driver, RegisterPageUI.EMAIL_TEXTBOX,string);
-		
+
 	}
 
 	public void inputToPasswordTextbox(String string) {
 		// TODO Auto-generated method stub
 		waitForElementVisible(driver,RegisterPageUI.PASSWORD_TEXTBOX);
 		senkeysToElement(driver, RegisterPageUI.PASSWORD_TEXTBOX,string);
-		
+
 	}
 
 	public void inputToConfirmPasswordTextbox(String string) {
 		// TODO Auto-generated method stub
 		waitForElementVisible(driver,RegisterPageUI.CONFIRM__PASSWORD_TEXTBOX);
 		senkeysToElement(driver, RegisterPageUI.CONFIRM__PASSWORD_TEXTBOX,string);
-		
+
 	}
 
 	public String getRegisterSuccessMessage() {
